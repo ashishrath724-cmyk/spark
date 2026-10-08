@@ -1,0 +1,5 @@
+{ "name": "spark-app", "private": true,
+  "scripts": { "setup": "node scripts/copy-www.js && npx cap add android && node scripts/patch-android.js && npx cap sync android",
+               "sync": "node scripts/copy-www.js && npx cap sync android" },
+  "dependencies": { "@capacitor/android": "^7.0.0", "@capacitor/core": "^7.0.0", "@capacitor/filesystem": "^7.0.0", "@capacitor/share": "^7.0.0" },
+  "devDependencies": { "@capacitor/cli": "^7.0.0" } }
